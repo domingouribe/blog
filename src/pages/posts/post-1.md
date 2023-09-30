@@ -15,7 +15,7 @@ tags: ["astro", "Blogger", "Personal Blog", "Aprendizaje público"]
 
 Publicado en: 2023-09-30
 
-¡Bienvenido a mi _nuevo blog_ de aprendizaje de Astro! Se supone ue acá compartiré mis avances en el aprendizaje de desarrollo Web con este Framwork
+¡Bienvenido a mi _nuevo blog_ de aprendizaje de Astro! Se supone que acá compartiré mis avances en el aprendizaje de desarrollo Web con este Framwork
 
 ## Lo que ya he conseguido en esta carrera:
 
