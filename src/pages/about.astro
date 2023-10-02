@@ -1,4 +1,9 @@
 ---
+
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
 const pageTitle = "Blog Domingo Uribe - Acerca de mí";
 const blogPageTitle = 'Acerca de mí';
 
@@ -46,11 +51,7 @@ const textCase = "uppercase";
 	</head>
 	<body>
 
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About Me</a>
-            <a href="/blog">Blog</a>
-        </nav>
+        <Header />
 
 		<h1> {blogPageTitle} </h1>
         <p>Soy {identify.firstName}  {identify.surName}, {identify.occupation} de {identify.country} especializado en la flauta americana ancestral conocida como "quena"... Pero esa no es la temática de este Blog.</p>
@@ -74,5 +75,9 @@ const textCase = "uppercase";
 
         { goal === 3 ? <p>Mi objetivo es terminar en 3 días</p> : <p>Mi objetivo no son 3 días</p> }
 
+        <Footer/>
+        <script>
+            import "../scripts/menu.js"
+        </script>
 	</body>
 </html>

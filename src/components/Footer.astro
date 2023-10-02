@@ -1,0 +1,33 @@
+---
+import Social from './Social.astro';
+
+const platform = "github";
+const username = "domingouribe"
+---
+
+<footer class="footer">
+    <p class="footer__description">
+        ¡Conoce más sobre mis prácicas y desarrollo de mi portafolio Web en <a href={`https://www.${platform}.com/${username}`}>{platform}!</a>
+    </p>
+
+    <div class="social-navi">
+        <Social platform="twitter" username="mapasdebits" />
+        <Social platform="instagram" username="larutadelaquena" />
+        <Social platform="youtube" username="@domingouribe" /> 
+    </div>
+
+</footer>
+
+<style>
+    .footer {
+        display: flex;
+        background-color: #666;
+        padding: 1rem;
+        flex-flow: column wrap;
+    }
+    .social-navi {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+</style>

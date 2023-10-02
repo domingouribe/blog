@@ -1,24 +1,28 @@
 ---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
+const pageTitle = "Página de inicio";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Blog Domingo Uribe - Home</title>
-	</head>
-	<body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Blog Domingo Uribe - {pageTitle}</title>
+  </head>
+  <body>
+    <Header />
 
-		<nav>
-            <a href="/">Home</a>
-            <a href="/about">About Me</a>
-            <a href="/blog">Blog</a>
-        </nav>
+    <h2>{pageTitle}</h2>
+    <h1>Mi Blog con Astro</h1>
 
-		<h2>Astro</h2>
-		<h1>Mi Blog con Astro</h1>
-	</body>
+    <Footer />
+	<script>
+		import "../scripts/menu.js"
+	</script>
+  </body>
 </html>
